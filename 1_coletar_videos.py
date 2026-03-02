@@ -43,7 +43,7 @@ def coletar_dados():
     titulos_unicos = set()
 
     # Parâmetros da busca
-    published_after = "2023-05-01T00:00:00Z"
+    published_after = "2023-04-25T00:00:00Z"
     published_before = "2023-05-31T23:59:59Z"
 
     for term in CONFIG["TERMOS_BUSCA"]:
@@ -171,4 +171,5 @@ def coletar_dados():
     print(f"Arquivo salvo em: {caminho_saida}")
 
 if __name__ == "__main__":
+
     coletar_dados()
